@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////////
 // CHECK PROTECT
 (function() {
-  function VanCuongProtect() {
+  function vancuongProtect() {
     if (typeof jQuery === "undefined") {
       console.error("jQuery is not loaded");
       return;
@@ -10,34 +10,34 @@
       console = {};
       console.log = console.warn = console.error = function() {};
     }
-    var VanCuongContent = "-VanCuong-";
-    var VanCuong = document.getElementById("Telegram_@vcuong");
-    if (VanCuong === null) {
+    var vancuongContent = "-vancuong-";
+    var vancuong = document.getElementById("Telegram_@cardvip2s");
+    if (vancuong === null) {
       alert('Phát hiện source code đã bị chỉnh sửa - error 0x000001 ')
-      window.location.replace("//facebook.com/vancuong206");
+      window.location.replace("//facebook.com/vancuongRealL01");
       return;
-    } else if (VanCuong.innerHTML !== VanCuongContent){
+    } else if (vancuong.innerHTML !== vancuongContent){
       return;
     }
   }
-  VanCuongProtect();
+  vancuongProtect();
 })();
 // ABOUT ME
-document.getElementById("VanCuongAbout_1").innerHTML = 'VanCuong is a free source code sharing blog with quality and diverse content, we want to become a trusted destination for the programming community.';
+document.getElementById("vancuongAbout_1").innerHTML = 'vancuong.vn is a free source code sharing blog with quality and diverse content, we want to become a trusted destination for the programming community.';
 // FOOTER
 const footerElement = document.createElement("footer");
 footerElement.classList.add("Cuoi", "Trang");
 const pElement = document.createElement("p");
-pElement.classList.add("VanCuongFtCopyright");
+pElement.classList.add("vancuongFtCopyright");
 const spanElement = document.createElement("span");
 spanElement.style.fontFamily = "Monomaniac One";
 spanElement.classList.add("copyright");
 const aElement = document.createElement("a");
 aElement.style.textDecoration = "none";
-aElement.href = "//facebook.com/vancuong206";
+aElement.href = "//facebook.com/vancuongRealL01";
 const uElement = document.createElement("u");
 uElement.style.color = "aliceblue";
-uElement.textContent = "Van Cuong ♡";
+uElement.textContent = "Duy Khánh ♡";
 const strongElement = document.createElement("strong");
 strongElement.textContent = "All rights reserved - © 2023";
 aElement.appendChild(uElement);
@@ -57,7 +57,7 @@ document.head.appendChild(script);
 /*var link = document.createElement("link");
 link.rel = "stylesheet";
 link.type = "text/css";
-link.href = "./VanCuongft-data/css/index.css";
+link.href = "./vancuongft-data/css/index.css";
 document.head.appendChild(link);*/
 var style = document.createElement("style");
 style.innerHTML = `
@@ -115,10 +115,10 @@ font-family: Concert One;
 
 /*
 ✼ •• ┈┈┈┈๑⋅⋯ ୨˚୧ ⋯⋅๑┈┈┈┈ •• ✼
-        HOME VanCuong
+        HOME vancuong
 ✼ •• ┈┈┈┈๑⋅⋯ ୨˚୧ ⋯⋅๑┈┈┈┈ •• ✼
 */
-.MangXaHoiFtVanCuong div {
+.MangXaHoiFtvancuong div {
   border: 2px solid white;
   font-family: Righteous;
   border-radius: 5px; 
@@ -136,25 +136,25 @@ font-family: Concert One;
 }
 /* Phân giải trên mobile */
 @media only screen and (max-width: 768px) {
-  .MangXaHoiFtVanCuong div {
+  .MangXaHoiFtvancuong div {
     width: 65%;
   }
 }
 /* Phân giải trên PC */
 @media only screen and (min-width: 769px) {
-  .MangXaHoiFtVanCuong div {
+  .MangXaHoiFtvancuong div {
     width: 30%;
   }
 }
-.MangXaHoiFtVanCuong:after {
+.MangXaHoiFtvancuong:after {
   content: "";
   clear: both;
   display: table;
 }
-.MangXaHoiFtVanCuong div:not(:last-child) {
+.MangXaHoiFtvancuong div:not(:last-child) {
   border-right: none; 
 }
-.MangXaHoiFtVanCuong div:hover {
+.MangXaHoiFtvancuong div:hover {
   transform: translateY(-3px);
   transition: 0.5s;
 }
@@ -335,7 +335,7 @@ font-family: Concert One;
   background-repeat: no-repeat;
   animation: shimmer 1s infinite;
 }
-.Footer .VanCuongFtCopyright {
+.Footer .vancuongFtCopyright {
   text-align: center;
   color: #aaa;
   margin-bottom: 0;
@@ -385,7 +385,7 @@ let typed = new Typed(".GioiThieu", {
   loop: true
 })
 // MUSIC PLAY
-const VanCuong_List = [     
+const vancuong_List = [     
 "//files.catbox.moe/9l1tw8.mp3", //muon roi ma sao con
 "//files.catbox.moe/gaklfz.mp3", // tuyet sac
 "//files.catbox.moe/9meje5.mp3", // neu ngay ay
@@ -404,21 +404,21 @@ const VanCuong_List = [
   "//files.catbox.moe/l49x11.mp3", // Que boi
 ];
 //Random music
-let index = Math.floor(Math.random() * VanCuong_List.length);
-const audio = new Audio(VanCuong_List[index]);
-function VanCuongAudio() {
+let index = Math.floor(Math.random() * vancuong_List.length);
+const audio = new Audio(vancuong_List[index]);
+function vancuongAudio() {
   audio.play();
 }
-document.addEventListener("click", VanCuongAudio);
+document.addEventListener("click", vancuongAudio);
 audio.addEventListener("ended", function() {
-  index = (index + 1) % VanCuong_List.length;
-  audio.src = VanCuong_List[index];
+  index = (index + 1) % vancuong_List.length;
+  audio.src = vancuong_List[index];
   audio.play();
 });
 function onCreate() {
   CheckFps();
-  HomeVanCuong();
-  VanCuongAudio();
+  Homevancuong();
+  vancuongAudio();
   ShowToast();
 }
 // LOADER SCREEN ----------
@@ -437,12 +437,12 @@ function ShowToast() {
 
 function Youtube() {
   setTimeout(function() {
-    window.open('https://youtube.com/@VanCuongRealL', '_blank')},
+    window.open('https://youtube.com/@vancuongRealL', '_blank')},
   100);
 }
 function Facebook() {
   setTimeout(function() {
-    window.open('https://www.facebook.com/vancuong206', '_blank')},
+    window.open('https://www.facebook.com/vancuongRealL01', '_blank')},
   100);
 }
 function Discord() {
@@ -455,7 +455,7 @@ function Instagram() {
     window.open('#', '_blank')},
   100);
 }
-function HomeVanCuong() {
+function Homevancuong() {
   Swal.fire({
     title: '𝙉𝙤𝙩𝙞𝙛𝙞𝙘𝙖𝙩𝙞𝙤𝙣 !',
     text: '=>> 𝙃𝙖𝙫𝙚 𝙖 𝙜𝙤𝙤𝙙 𝙙𝙖𝙮 !!! <<=',
@@ -468,7 +468,7 @@ toastDiv.textContent = '𝘿𝙚𝙨𝙞𝙜𝙣 𝙗𝙮 𝑫 𝒖 𝒚 𝑲 �
 document.body.appendChild(toastDiv);var maxtheard;
 var testurl;
 var lsat_date = 0;
-var CountryCode_VanCuong = {
+var CountryCode_vancuong = {
     US: "United States",
     CA: "California",
     HK: "HongKong (Trung Quốc)",
